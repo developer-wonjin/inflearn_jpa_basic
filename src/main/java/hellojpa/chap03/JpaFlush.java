@@ -1,6 +1,6 @@
 package hellojpa.chap03;
 
-import hellojpa.Member;
+import hellojpa.Member1;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -16,8 +16,8 @@ public class JpaFlush {
 
         try{
 
-            Member member = new Member(400L, "member200");
-            em.persist(member);
+            Member1 member1 = new Member1(400L, "member200");
+            em.persist(member1);
 
             em.flush();
 

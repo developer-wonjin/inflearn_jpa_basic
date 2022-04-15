@@ -1,6 +1,6 @@
 package hellojpa.chap03;
 
-import hellojpa.Member;
+import hellojpa.Member1;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -15,11 +15,11 @@ public class JpaWriteLatency {
         tx.begin();
 
         try{
-            Member member1 = new Member(150L, "A");
-            Member member2 = new Member(160L, "A");
+            Member1 member1 = new Member1(150L, "A");
+            Member1 member12 = new Member1(160L, "A");
 
             em.persist(member1);
-            em.persist(member2);
+            em.persist(member12);
 
             System.out.println("==========================================");
 

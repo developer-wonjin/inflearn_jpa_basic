@@ -1,6 +1,6 @@
 package hellojpa.chap03;
 
-import hellojpa.Member;
+import hellojpa.Member1;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -16,8 +16,8 @@ public class JpaDrityChecking {
 
         try{
 
-            Member member = em.find(Member.class, 150L);
-            member.setName("AAAAAAAAA");
+            Member1 member1 = em.find(Member1.class, 150L);
+            member1.setUsername("AAAAAAAAA");
             //em.persist(member);
             /*
             JPA의 기본사상은 1차캐시를 java컬렉션프레임워크처럼 사용하는 것.
